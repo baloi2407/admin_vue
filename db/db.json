@@ -1,0 +1,249 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Smartphone X",
+            "price": 599.99,
+            "category": "Electronics",
+            "stock": 50,
+            "description": "Latest smartphone with advanced features."
+        },
+        {
+            "id": 2,
+            "name": "Laptop Pro",
+            "price": 1299.99,
+            "category": "Electronics",
+            "stock": 30,
+            "description": "High-performance laptop for professionals."
+        },
+        {
+            "id": 3,
+            "name": "Cotton T-Shirt",
+            "price": 19.99,
+            "category": "Clothing",
+            "stock": 100,
+            "description": "Comfortable cotton t-shirt in various colors."
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Electronics",
+            "description": "Electronic devices and accessories",
+            "productCount": 2
+        },
+        {
+            "id": 2,
+            "name": "Clothing",
+            "description": "Apparel and fashion items",
+            "productCount": 1
+        },
+        {
+            "id": 3,
+            "name": "Books",
+            "description": "Physical and digital books",
+            "productCount": 0
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "totalSpent": 1299.99,
+            "orderCount": 3,
+            "status": "active",
+            "notes": "Frequent buyer of electronics"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "totalSpent": 599.99,
+            "orderCount": 2,
+            "status": "active",
+            "notes": "Prefers eco-friendly products"
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "email": "bob@example.com",
+            "totalSpent": 19.99,
+            "orderCount": 1,
+            "status": "inactive",
+            "notes": "Hasn't made a purchase in 6 months"
+        }
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "customerId": 1,
+            "date": "2023-05-15T10:30:00Z",
+            "total": 599.99,
+            "status": "pending"
+        },
+        {
+            "id": 2,
+            "customerId": 1,
+            "date": "2023-06-01T14:45:00Z",
+            "total": 699.99,
+            "status": "completed"
+        },
+        {
+            "id": 3,
+            "customerId": 2,
+            "date": "2023-06-10T09:15:00Z",
+            "total": 599.99,
+            "status": "completed"
+        },
+        {
+            "id": 4,
+            "customerId": 3,
+            "date": "2023-01-05T11:00:00Z",
+            "total": 19.99,
+            "status": "completed"
+        }
+    ],
+    "sales": [
+        {
+            "id": 1,
+            "date": "2023-05-15",
+            "total": 599.99,
+            "orderCount": 1
+        },
+        {
+            "id": 2,
+            "date": "2023-06-01",
+            "total": 699.99,
+            "orderCount": 1
+        },
+        {
+            "id": 3,
+            "date": "2023-06-10",
+            "total": 599.99,
+            "orderCount": 1
+        },
+        {
+            "id": 4,
+            "date": "2023-01-05",
+            "total": 19.99,
+            "orderCount": 1
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "username": "admin",
+            "password": "admin123",
+            "email": "admin@example.com",
+            "role": "admin"
+        },
+        {
+            "id": 2,
+            "username": "manager",
+            "password": "manager123",
+            "email": "manager@example.com",
+            "role": "manager"
+        },
+        {
+            "id": 3,
+            "username": "employee",
+            "password": "employee123",
+            "email": "employee@example.com",
+            "role": "employee"
+        }
+    ],
+    "roles": [
+        {
+            "id": 1,
+            "name": "admin",
+            "permissions": [
+                "manage_products",
+                "manage_categories",
+                "manage_customers",
+                "manage_orders",
+                "manage_employees",
+                "manage_roles",
+                "view_reports"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "manager",
+            "permissions": [
+                "manage_products",
+                "manage_categories",
+                "manage_customers",
+                "manage_orders",
+                "view_reports"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "employee",
+            "permissions": [
+                "view_products",
+                "view_categories",
+                "view_customers",
+                "view_orders"
+            ]
+        }
+    ],
+    "permissions": [
+        {
+            "id": 1,
+            "name": "manage_products",
+            "description": "Create, read, update, and delete products"
+        },
+        {
+            "id": 2,
+            "name": "manage_categories",
+            "description": "Create, read, update, and delete categories"
+        },
+        {
+            "id": 3,
+            "name": "manage_customers",
+            "description": "Create, read, update, and delete customer information"
+        },
+        {
+            "id": 4,
+            "name": "manage_orders",
+            "description": "View and update order status"
+        },
+        {
+            "id": 5,
+            "name": "manage_employees",
+            "description": "Create, read, update, and delete employee accounts"
+        },
+        {
+            "id": 6,
+            "name": "manage_roles",
+            "description": "Create, read, update, and delete roles and permissions"
+        },
+        {
+            "id": 7,
+            "name": "view_reports",
+            "description": "Access and view sales and inventory reports"
+        },
+        {
+            "id": 8,
+            "name": "view_products",
+            "description": "View product information"
+        },
+        {
+            "id": 9,
+            "name": "view_categories",
+            "description": "View category information"
+        },
+        {
+            "id": 10,
+            "name": "view_customers",
+            "description": "View customer information"
+        },
+        {
+            "id": 11,
+            "name": "view_orders",
+            "description": "View order information"
+        }
+    ]
+}
